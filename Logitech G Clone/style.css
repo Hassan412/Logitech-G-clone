@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position: relative;
+}
+main > nav{
+    width: 100%;
+    height: 5vh;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+main > nav ul.left-nav-links{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+main > nav ul.left-nav-links li{
+    flex: 1;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+main > nav ul.left-nav-links li:last-child{
+    border-right: none;
+}
+main > nav ul.left-nav-links li a{
+    text-decoration: none;
+    width: 80%;
+    height: 80%;
+}
+main > nav ul.left-nav-links li a img{
+    width: 100%;
+    height: 100%;
+    fill: black;
+}
+main > nav ul.right-nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+main > nav ul.right-nav-links li{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+main > nav ul.right-nav-links li a{
+    text-decoration: none;
+    color: #686868fd;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul.right-nav-links li:nth-child(2){
+    border-right: none;
+}
+nav ul.right-nav-links li a i{
+    margin: 0 5px;
+    font-size: 15px;
+}
+nav ul.right-nav-links li a:hover{
+    color: white;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container nav{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    top: 1.5%;
+    z-index: 1000;
+}
+.container nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+} 
+.container ul li{
+    list-style: none; 
+}
+.container nav ul li:nth-child(2){
+    margin-left: 130px;
+}
+.container nav ul li:last-child button{
+    margin: 0 20px;
+}
+.container nav ul li button{
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+    cursor: pointer;
+}
+.container nav ul li button span{
+    color: rgb(189, 189, 189);
+    font-size: 35px;
+}
+.container ul li a img{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.swiper{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.page h1{
+    color: white;
+    font-size: 30px;
+}
+.page-one h1{
+    align-self: flex-end;
+    margin-bottom: 150px;
+}
+.page-five h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+    
+}
+.page p{
+    color: white;
+    font-size: 15px;
+}
+.page-one{
+    background-image: url('Images/logitech\ chair');
+    display: flex;
+    justify-content: center;
+}
+.page-two{
+    background-image: url('images/Hand\ G');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
+.page-two h1{
+    font-size: 40px;
+}
+.page-three{
+    background-image: url('images/logixleague.jpg');
+}
+.page-four{
+    background-image: url('images/logotech\ Ghost');
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-four p span{
+    font-weight: 900;
+    color: rgb(72, 161, 235);
+}
+.page-four p span:last-child{
+    color: rgb(241, 119, 97);
+}
+.page-five{
+    background-image: url('Images/Logitech-G903-.jpg');
+    padding-top: 270px;
+    padding-left: 100px;
+}
+.page-five p span{
+    color: rgb(72, 161, 235);
+    font-weight: 600;
+}
+.page-six{
+    
+    background-image: url('images/headphonefire.png');
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #1c1c1c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #686666;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #474646;
+}
+.swiper-one .swiper-button-prev,.swiper-one .swiper-button-next{
+    color: white;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.212);
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.swiper-one .swiper-button-prev:hover ,.swiper-one .swiper-button-next:hover{
+    transform: scale(1.2);
+}
+.swiper-one .swiper-button-prev::before,.swiper-one .swiper-button-next::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(128, 128, 128, 0.212);
+    border-radius: 50%;
+    border: 2px dotted rgba(255, 255, 255, 0.377)
+}
+.swiper-one .swiper-button-prev:hover::before,.swiper-one .swiper-button-next:hover::before{
+    animation: animate 2.5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(365deg);
+    }
+}
+.swiper-one .swiper-button-prev::after,.swiper-one .swiper-button-next::after{
+    font-size: 20px;
+    font-weight: 600;
+}
+.swiper-two .swiper-button-prev::after,.swiper-two .swiper-button-next::after{
+    font-size: 35px;
+    font-weight: 500;
+}
+.swiper-two .swiper-button-prev,.swiper-two .swiper-button-next{
+    color: rgb(255, 253, 253);
+    position: absolute;
+
+}
+
+.swiper .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    opacity: 0.5;
+
+}
+.swiper-two .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){
+    opacity: 1;
+}
+.swiper .swiper-pagination-bullet-active{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid white;
+}
+.pricing-table{
+    width: 100%;
+    height: 75vh;
+    background-color: #2f3132;
+    text-align: center;
+}
+.swiper-two {
+    height: 80%;
+    width: 80%;
+}
+.swiper-two .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.swiper-two .swiper-slide .pricing-bar{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.swiper-two .swiper-slide .pricing-bar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.swiper-two .swiper-slide .pricing-bar ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 20vh;
+    flex: 1;
+    height: 100%;
+    color: white;
+}
+
+.swiper-two .swiper-slide .pricing-bar ul li .img-tab{
+    width: 100%;
+    
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .img-tab img{
+    scale: 0.7;
+    transition: 0.3s;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .img-tab img:hover{
+    scale: 0.9;
+}
+.pricing-table h1{
+    color: white;
+    font-size: 29px;
+    margin-bottom: 5vh;
+    padding-top: 3vh;
+    font-weight: 900;
+    white-space: nowrap;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription h3{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription h3 a{
+    color: white;
+    text-decoration: none;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription p{
+    line-height: 20px;
+    font-size: 0.9vw;
+    text-align: left;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription  h3 a:hover{
+    text-decoration: underline;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription small{
+    font-size: 0.9vw;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription > span{
+    margin-top: 19px;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription .sail-tag{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+}
+.swiper-two .swiper-slide .pricing-bar ul li .discription .sail-tag::before{
+    content: 'Sale';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -80%;
+    cursor: pointer;
+    font-size: 12px;
+}
+.swiper-two .swiper-slide{
+    height: 100%;
+}
+.person-banner{
+    width: 100%;
+    height: 90vh;
+    background-image: url('images/Person-banner.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.headphone-banner{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/headphone-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.person-img{
+    width: 100%;
+    height: 50vh;
+    background-image: url('images/Person-img.jpg');
+    background-size: contain;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+}
+.home-esport{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/home-esports-tout.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.battlefield{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/battlefield.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.light-sync{
+    width: 100%;
+    height: 50vh;
+    background-image: url('images/lightsync.jpg');
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    width: 100%;
+    height: 45vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 2vw;
+    padding: 0 5vw;
+    padding-top: 5vh;
+    align-items: start;
+    align-self: start;
+}
+.links ul{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    height: 100%;
+}
+.links ul li{
+    list-style: none;
+    font-size: 15px;
+}
+.links ul li a{
+    color: #2f3132;
+    text-decoration: none;
+}
+.links ul li a:hover{
+    border-bottom: 1px solid #2f3132;
+}
+.copy-right-bar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+.copy-right-bar p{
+    font-size: 12px;
+}
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns li .fa {
+	width: 32px;
+    height: 32px;
+	color: #000;
+	background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+    transition: 0.3s;
+}
+.socialbtns li:nth-child(1) .fa:hover {
+	color: #ffffff;
+	background-color: #3b5998;
+}
+.socialbtns li:nth-child(2) .fa:hover {
+	color: #ffffff;
+	background-color: #00acee;
+}
+.socialbtns li:nth-child(3) .fa:hover {
+	color: #ffffff;
+    background-color: #cd486b;
+}
+.socialbtns li:nth-child(4) .fa:hover {
+	color: #ffffff;
+	background-color: #FF0000;
+}
+#light-sync-discription{
+    width: 20%;
+    height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.light-sync{
+    display: flex;
+    align-items: center;
+    padding-left: 18%;
+}
+
+#light-sync-discription h1{
+    font-size: 45px;
+    line-height: 45px;
+    animation: fade 0.7s linear;
+    letter-spacing: 2px;
+}
+#light-sync-discription span{
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+#light-sync-discription > p{
+    animation: fade 0.8s linear;
+    
+}
+#light-sync-discription span p::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+#light-sync-discription span p:hover::before{
+    width: 0;
+    height: 0px;
+}
+#light-sync-discription span P{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .battlefield{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 20vw;
+    }
+    #battlefield-discription{
+        width: 25%;
+        height: 60%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 150px 0;
+    }
+    .battlefield-discription{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-right: 18%;
+    }
+    
+    #battlefield-discription h1{
+        font-size: 45px;
+        line-height: 45px;
+        animation: fade 0.7s linear;
+        white-space: nowrap;
+        text-align: right;
+        letter-spacing: 2px;
+    }
+
+    #battlefield-discription > p{
+        animation: fade 0.8s linear;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    @keyframes fade{
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .esportG-logo{
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .esportG-logo img{
+            width: 100%;
+            height: 100%;
+        }
+        .esport-discription{
+            border-left: 1.5px dotted white;
+            padding-left: 50px;
+            flex-basis: 50%;
+            color: white;
+            height: 100%;
+        }
+        .esport-discription div{
+            width: 90px;
+            height: 6px;
+            background-color: #c3c6c8;
+            margin: 30px  0;
+            animation: 0.5s anime linear;
+        }
+        .esport-discription p{
+            animation: fade 0.6s linear;
+        }
+        .esport-discription h1{
+            line-height: 35px;
+            animation: fade 0.3s linear;
+        }
+        .home-esport{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .esport-content{
+            display: flex;
+            width: 50%;
+            justify-content: right;
+            min-height: 20%;
+            align-items: center;
+        }
+        @keyframes anime {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+                width: 300px;
+              }
+              to {
+                opacity: 1;
+                width: 90px;
+              }
+        }
+        .person-discription{
+            width: 45%;
+            color: #2f3132;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .person-details{
+            height: 30%;
+            display: flex;
+        }
+        .person-discription .person-details .socialbtns{
+            height: fit-content;
+            padding: 0;
+        }
+        .person-details img{
+            height: 100%;
+        }
+        @media(max-width: 1300px){
+            
+        }
+        @media(max-width: 800px){
+            
+        }
+        @media(max-width: 500px){
+            
+        }
+        @media(max-width: 300px){
+            
+        }
+        
